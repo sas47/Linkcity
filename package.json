@@ -1,0 +1,34 @@
+{
+    "name": "tamtomy-theme",
+    "private": true,
+    "browserslist": [
+        "defaults and supports es6-module"
+    ],
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "translate": "yarn translate:pot && yarn translate:update",
+        "translate:pot": "wp i18n make-pot . ./resources/lang/theme.pot --include=\"app,config,resources/\"",
+        "translate:update": "wp i18n update-po ./resources/lang/theme.pot",
+        "translate:compile": "yarn translate:mo && yarn translate:js",
+        "translate:js": "wp i18n make-json ./resources/lang --pretty-print",
+        "translate:mo": "wp i18n make-mo ./resources/lang ./resources/lang"
+    },
+    "devDependencies": {
+        "@types/node": "18.15.3",
+        "@vue/reactivity": "3.3.4",
+        "autoprefixer": "10.4.15",
+        "laravel-vite-plugin": "^1.0.2",
+        "postcss": "^8.4.23",
+        "sass": "^1.77.2",
+        "typescript": "^5.4.3",
+        "vite": "^5.2.6"
+    },
+    "dependencies": {
+        "petite-vue": "^0.4.1"
+    }
+}

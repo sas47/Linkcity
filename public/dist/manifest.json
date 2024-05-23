@@ -1,0 +1,25 @@
+{
+  "resources/images/logo.svg": {
+    "file": "logo-Bkwwc5t3.svg",
+    "src": "resources/images/logo.svg"
+  },
+  "resources/images/main-bg.jpg": {
+    "file": "main-bg-Cg6qTbXS.jpg",
+    "src": "resources/images/main-bg.jpg"
+  },
+  "resources/scripts/app.ts": {
+    "file": "app-ykX_l-hj.js",
+    "name": "app",
+    "src": "resources/scripts/app.ts",
+    "isEntry": true,
+    "css": [
+      "app-Czb_PuW_.css"
+    ]
+  },
+  "resources/scripts/editor.ts": {
+    "file": "editor-l0sNRNKZ.js",
+    "name": "editor",
+    "src": "resources/scripts/editor.ts",
+    "isEntry": true
+  }
+}
